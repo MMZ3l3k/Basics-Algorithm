@@ -1,4 +1,4 @@
-package org.example;
+package binary.search;
 
 import java.util.Scanner;
 
@@ -10,28 +10,29 @@ public class Main {
         int numb = randomNumbers.rollNumb();
 
      System.out.println(numb);
-
         System.out.println("Podaj swoją liczbe: ");
         int myNumb = in.nextInt();
 
-       // System.out.println(myNumb);
 
-        if(myNumb==numb){
-            System.out.println("Twoja wylosowana liczba to: " + numb);
-        }else {
+        if(myNumb!=numb){
             while (myNumb!=numb) {
 
-                if(numb>myNumb) {
+                if (numb > myNumb) {
                     System.out.println("Wylosowana liczba jest wieksza: ");
-                    System.out.println("Podaj swoją liczbe: ");
-                    myNumb = in.nextInt();
-                }else {
+                } else {
                     System.out.println("Wylosowana liczba jest mniejsza : ");
-                    System.out.println("Podaj swoją liczbe: ");
-                    myNumb = in.nextInt();
                 }
+                System.out.println("Podaj swoją liczbe: ");
+                myNumb = in.nextInt();
+            }if(myNumb==numb){
+                System.out.println("Twoja wylosowana liczba to: " + numb);
+
             }
         }
-        System.out.println("Twoja wylosowana liczba to: " + numb);
+
+            else {
+                System.out.println("Twoja wylosowana liczba to: " + numb);
+            }
+        }
        }
-    }
+

@@ -1,4 +1,4 @@
-package org.example;
+package binary.search;
 
 public class RandomNumbers {
     Integer intNum;
